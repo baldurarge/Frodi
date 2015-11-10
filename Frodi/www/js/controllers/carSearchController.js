@@ -4,7 +4,7 @@
   App.controller('carSearchController',function($scope,GetAPI){
 
     $scope.car;
-    $scope.message = "Leitaðu Að Bíl Með Bílnúmeri";
+    $scope.message = "Leitaðu Að Bíl Eftir Bílnúmeri";
     $scope.showOrNot = false;
 
 
@@ -20,7 +20,7 @@
         $scope.message = ""
       }else{
         $scope.showOrNot = false;
-        $scope.message = "Ekkert Fundið";
+        $scope.message = "Ekkert Fannst";
       }
     };
 

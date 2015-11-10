@@ -10,22 +10,6 @@
       });
     };
 
-    var getCompany = function(name){
-
-      return $http.get("js/data/companys.json")
-        .then(function(res){
-          var company = [];
-          for(var i = 0; i<res.data.length;i++){
-            for(key in res.data[i]){
-              if(res.data[i][key] == name){
-                company.push(res.data[i]);
-              }
-            }
-          }
-          return company
-        });
-    };
-
     var getCompany2 = function(name){
 
       var urlComps = '//tsuts.tskoli.is/2t/0204912809/selectClass2.php?firstname=';
@@ -37,11 +21,20 @@
         });
     };
 
+    var getCurrency = function(){
+
+      return $http.get("http://apis.is/currency/arion")
+        .then(function(res){
+          return res.data.results;
+        })
+
+    };
+
 
     return{
       getCar:getCar,
-      getCompany:getCompany,
-      getCompany2:getCompany2
+      getCompany2:getCompany2,
+      getCurrency:getCurrency
     };
 
   };

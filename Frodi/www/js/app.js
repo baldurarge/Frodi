@@ -23,6 +23,12 @@ var App = angular.module('App', ['ionic'])
       templateUrl:'views/companySearch.html',
       controller: 'companySearchController'
     });
+    $stateProvider.
+      state('currency',{
+      url:'/currency',
+      templateUrl:'views/currencyView.html',
+      controller: 'currencyController'
+    });
     $urlRouterProvider.otherwise('/');
 
   });

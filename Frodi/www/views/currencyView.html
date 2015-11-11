@@ -1,7 +1,7 @@
-<ion-view title="companys" class="fullIon">
+<ion-view title="currency" class="fullIon">
   <div class="list currencyList col-80 col-offset-10">
     <label class="item item-input item-floating-label" data-ng-repeat="item in currencyData" data-ng-click="clicked(item)">
-      <input type="text" value="{{item.forApp}}" ng-model="item.forApp" ng-change="changeCurrency(item)"><p class="longNameText">{{item.longName}}</p>
+      <input type="tel" value="{{item.forApp}}" ng-model="item.forApp" ng-change="changeCurrency(item)"><p class="longNameText">{{item.longName}}</p>
     </label>
   </div>
 

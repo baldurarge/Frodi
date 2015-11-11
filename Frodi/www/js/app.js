@@ -29,6 +29,12 @@ var App = angular.module('App', ['ionic'])
       templateUrl:'views/currencyView.html',
       controller: 'currencyController'
     });
+    $stateProvider.
+    state('weather',{
+      url:'/weather',
+      templateUrl:'views/weatherView.html',
+      controller: 'weatherController'
+    });
     $urlRouterProvider.otherwise('/');
 
   });

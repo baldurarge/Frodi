@@ -31,10 +31,20 @@
     };
 
 
+
+
+    var getWeather = function(){
+
+      return "hello";
+
+    };
+
+
     return{
       getCar:getCar,
       getCompany2:getCompany2,
-      getCurrency:getCurrency
+      getCurrency:getCurrency,
+      getWeather:getWeather
     };
 
   };
